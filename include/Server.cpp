@@ -56,7 +56,6 @@ void *Threaddeal(void *nptr)
            flag_tmp=(int)data[0];
            delete[] data;
            mycontrol->settarget(flag_tmp);
-           std::cout<<"测试傻逼信号  "<<flag_tmp<<std::endl;
            data=mycontrol->rec_m();
            if(data!=NULL)
            {         
